@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#030305" />
+  <meta
+    name="description"
+    content="Creative designer and developer portfolio — immersive digital experiences, thoughtful design, and modern development."
+  />
+  <title>Creative Designer & Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="hero-section" id="home">
+    <div class="video-container" aria-hidden="true">
+      <video
+        id="heroVideo"
+        class="hero-video"
+        autoplay
+        muted
+        playsinline
+        preload="auto"
+      >
+        <source
+          src="https://strvid.nyc3.cdn.digitaloceanspaces.com/cloudinary/portfolio_hero_bg_zuhahj.webm"
+          type="video/webm"
+        />
+      </video>
+      <div class="video-overlay"></div>
+      <div class="ambient-glow ambient-glow-one"></div>
+      <div class="ambient-glow ambient-glow-two"></div>
+    </div>
+
+    <header class="navbar animate-fade-up delay-1">
+      <a class="logo" href="#home" aria-label="Portfolio home">
+        <i class="ph ph-cube-transparent logo-icon" aria-hidden="true"></i>
+        <span>PORTFOLIO</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#work">Work</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-outline nav-cta" href="mailto:hello@example.com">
+          Let's Work Together
+        </a>
+      </div>
+
+      <button
+        class="mobile-menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+      >
+        <i class="ph ph-list" aria-hidden="true"></i>
+      </button>
+
+      <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+        <a class="mobile-nav-link" href="#home">Home</a>
+        <a class="mobile-nav-link" href="#work">Work</a>
+        <a class="mobile-nav-link" href="#about">About</a>
+        <a class="mobile-nav-link" href="#contact">Contact</a>
+        <a class="btn btn-outline mobile-work-btn" href="mailto:hello@example.com">
+          Let's Work Together
+        </a>
+      </nav>
+    </header>
+
+    <section class="hero-content" aria-labelledby="hero-title">
+      <div class="text-wrapper">
+        <p class="greeting animate-fade-up delay-2">Hello, I'm</p>
+
+        <h1 class="main-title animate-fade-up delay-3" id="hero-title">
+          Creative Designer<br />
+          <span>&amp; Developer</span>
+        </h1>
+
+        <p class="sub-title animate-fade-up delay-4">
+          I build immersive digital experiences
+        </p>
+
+        <div class="cta-group animate-fade-up delay-5">
+          <a class="btn btn-primary" href="#work">
+            View My Work
+            <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+          </a>
+          <a class="btn btn-outline" href="#" download>
+            Download CV
+            <i class="ph ph-download-simple" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="hero-footer animate-fade-up delay-5">
+      <div class="footer-left">
+        <div class="stats-group" aria-label="Portfolio highlights">
+          <div class="stat-item">
+            <strong>08+</strong>
+            <span>Years Experience</span>
+          </div>
+          <span class="stat-line" aria-hidden="true"></span>
+          <div class="stat-item">
+            <strong>60+</strong>
+            <span>Projects Delivered</span>
+          </div>
+        </div>
+
+        <div class="social-links" aria-label="Social links">
+          <a href="#" aria-label="Dribbble">
+            <i class="ph ph-dribbble-logo" aria-hidden="true"></i>
+          </a>
+          <a href="#" aria-label="GitHub">
+            <i class="ph ph-github-logo" aria-hidden="true"></i>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <i class="ph ph-linkedin-logo" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="mouse">
+          <span class="wheel"></span>
+        </div>
+      </div>
+
+      <aside class="availability-card" aria-label="Availability">
+        <div class="availability-heading">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span>Available for select projects</span>
+        </div>
+        <p>Have an ambitious idea? Let's turn it into a memorable digital experience.</p>
+        <a href="mailto:hello@example.com">
+          Start a project
+          <i class="ph ph-arrow-right" aria-hidden="true"></i>
+        </a>
+      </aside>
+    </footer>
+  </main>
+</body>
+</html>
